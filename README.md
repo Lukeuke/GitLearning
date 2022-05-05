@@ -17,12 +17,33 @@ git add .
 
 ```
 
+### Discard changes on directory
+
+```bash
+
+git restore <file_name>
+
+``` 
+
+### Removes tracked files 
+
+```bash
+
+git reset
+
+```
+
 ### Removes untracked files
 ```bash
 
-git clean
+git clean -n (list of files to delete)
+
+git clean -nd (works for directories)
+
+git clean -idf (interactive deleting)
 
 ```
+
 
 ### Commit changes
 ```bash
@@ -46,7 +67,7 @@ git push <remote_branch_name> <your_branch_name>
 
 ```
 
-### To pull from GitHub
+### To pull from remote remote repository *e.g. GitHub*
 ```bash
 
 git pull <repo_url>
